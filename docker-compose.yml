@@ -1,0 +1,99 @@
+services:
+  # 金属幕墙锈蚀污损检测系统
+  corrosion-detection:
+    image: minmuslin/intelligent-curtain-wall:corrosion-detection
+    container_name: corrosion-detection
+    ports:
+      - "8000:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
+  # 石材幕墙裂缝检测系统
+  crack-detection:
+    image: minmuslin/intelligent-curtain-wall:crack-detection
+    container_name: crack-detection
+    ports:
+      - "8001:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
+  # 玻璃幕墙平整度检测系统
+  flatness-detection:
+    image: minmuslin/intelligent-curtain-wall:flatness-detection
+    container_name: flatness-detection
+    ports:
+      - "8002:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
+  # 移动端幕墙数据采集与展示系统
+  mobile-data:
+    image: minmuslin/intelligent-curtain-wall:mobile-data
+    container_name: mobile-data
+    ports:
+      - "8003:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
+  # 无人机采集数据的 3D 建模与通讯系统
+  modeling-communication:
+    image: minmuslin/intelligent-curtain-wall:modeling-communication
+    container_name: modeling-communication
+    ports:
+      - "8004:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
+  # 对象存储 OSS 管理控制系统
+  oss-management:
+    image: minmuslin/intelligent-curtain-wall:oss-management
+    container_name: oss-management
+    ports:
+      - "8005:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
+  # 幕墙韧性评估软件系统
+  resilience-assessment:
+    image: minmuslin/intelligent-curtain-wall:resilience-assessment
+    container_name: resilience-assessment
+    ports:
+      - "8006:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
+  # 玻璃幕墙爆裂和平整度检测系统
+  spalling-detection:
+    image: minmuslin/intelligent-curtain-wall:spalling-detection
+    container_name: spalling-detection
+    ports:
+      - "8007:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
+  # 石材幕墙污渍检测系统
+  stain-detection:
+    image: minmuslin/intelligent-curtain-wall:stain-detection
+    container_name: stain-detection
+    ports:
+      - "8008:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
+  # 幕墙震动数据检测与展示系统
+  vibration-detection:
+    image: minmuslin/intelligent-curtain-wall:vibration-detection
+    container_name: vibration-detection
+    ports:
+      - "8009:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
+  # 用户鉴权系统
+  user-authentication:
+    image: minmuslin/intelligent-curtain-wall:user-authentication
+    container_name: user-authentication
+    ports:
+      - "8010:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
