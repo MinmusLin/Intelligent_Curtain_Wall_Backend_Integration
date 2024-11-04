@@ -9,6 +9,8 @@ START_SECONDS=$(date +%s)
 {
     echo "Execution Start Time: $START_TIME"
 
+    cd /home/mat/Intelligent_Curtain_Wall
+
     sudo docker compose pull
     sudo docker compose down
     sudo docker compose up -d
