@@ -1,0 +1,33 @@
+[submodule "CorrosionDetection"]
+	path = CorrosionDetection
+	url = git@github.com:MinmusLin/ICW_CorrosionDetection_Backend
+[submodule "CrackDetection"]
+	path = CrackDetection
+	url = git@github.com:MinmusLin/ICW_CrackDetection_Backend
+[submodule "FlatnessDetection"]
+	path = FlatnessDetection
+	url = git@github.com:MinmusLin/ICW_FlatnessDetection_Backend
+[submodule "MobileData"]
+	path = MobileData
+	url = git@github.com:MinmusLin/ICW_MobileData_Backend
+[submodule "ModelingCommunication"]
+	path = ModelingCommunication
+	url = git@github.com:MinmusLin/ICW_ModelingCommunication_Backend
+[submodule "OssManagement"]
+	path = OssManagement
+	url = git@github.com:MinmusLin/ICW_OssManagement_Backend
+[submodule "ResilienceAssessment"]
+	path = ResilienceAssessment
+	url = git@github.com:MinmusLin/ICW_ResilienceAssessment_Backend
+[submodule "SpallingDetection"]
+	path = SpallingDetection
+	url = git@github.com:MinmusLin/ICW_SpallingDetection_Backend
+[submodule "StainDetection"]
+	path = StainDetection
+	url = git@github.com:MinmusLin/ICW_StainDetection_Backend
+[submodule "VibrationDetection"]
+	path = VibrationDetection
+	url = git@github.com:MinmusLin/ICW_VibrationDetection_Backend
+[submodule "UserAuthentication"]
+	path = UserAuthentication
+	url = git@github.com:MinmusLin/ICW_UserAuthentication_Backend
