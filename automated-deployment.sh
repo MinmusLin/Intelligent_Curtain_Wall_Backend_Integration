@@ -2,6 +2,8 @@
 
 LOG_DIR="/home/mat/Intelligent_Curtain_Wall/DeploymentLogs"
 
+export TZ="Asia/Shanghai"
+
 TIMESTAMP=$(date +"%Y%m%d-%H:%M")
 START_TIME=$(date +"%Y-%m-%d %H:%M:%S")
 START_SECONDS=$(date +%s)
