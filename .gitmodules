@@ -1,36 +1,36 @@
 [submodule "Subsystems/CorrosionDetection"]
 	path = Subsystems/CorrosionDetection
-	url = https://github.com/MinmusLin/ICW_CorrosionDetection_Backend
+	url = git@github.com:MinmusLin/ICW_CorrosionDetection_Backend.git
 [submodule "Subsystems/CrackDetection"]
 	path = Subsystems/CrackDetection
-	url = https://github.com/MinmusLin/ICW_CrackDetection_Backend
+	url = git@github.com:MinmusLin/ICW_CrackDetection_Backend.git
 [submodule "Subsystems/FlatnessDetection"]
 	path = Subsystems/FlatnessDetection
-	url = https://github.com/MinmusLin/ICW_FlatnessDetection_Backend
+	url = git@github.com:MinmusLin/ICW_FlatnessDetection_Backend.git
 [submodule "Subsystems/MobileData"]
 	path = Subsystems/MobileData
-	url = https://github.com/MinmusLin/ICW_MobileData_Backend
+	url = git@github.com:MinmusLin/ICW_MobileData_Backend.git
 [submodule "Subsystems/ModelingCommunication"]
 	path = Subsystems/ModelingCommunication
-	url = https://github.com/MinmusLin/ICW_ModelingCommunication_Backend
+	url = git@github.com:MinmusLin/ICW_ModelingCommunication_Backend.git
 [submodule "Subsystems/ResilienceAssessment"]
 	path = Subsystems/ResilienceAssessment
-	url = https://github.com/MinmusLin/ICW_ResilienceAssessment_Backend
+	url = git@github.com:MinmusLin/ICW_ResilienceAssessment_Backend.git
 [submodule "Subsystems/SpallingDetection"]
 	path = Subsystems/SpallingDetection
-	url = https://github.com/MinmusLin/ICW_SpallingDetection_Backend
+	url = git@github.com:MinmusLin/ICW_SpallingDetection_Backend.git
 [submodule "Subsystems/StainDetection"]
 	path = Subsystems/StainDetection
-	url = https://github.com/MinmusLin/ICW_StainDetection_Backend
+	url = git@github.com:MinmusLin/ICW_StainDetection_Backend.git
 [submodule "Subsystems/UserAuthentication"]
 	path = Subsystems/UserAuthentication
-	url = https://github.com/MinmusLin/ICW_UserAuthentication_Backend
+	url = git@github.com:MinmusLin/ICW_UserAuthentication_Backend.git
 [submodule "Subsystems/VibrationDetection"]
 	path = Subsystems/VibrationDetection
-	url = https://github.com/MinmusLin/ICW_VibrationDetection_Backend
+	url = git@github.com:MinmusLin/ICW_VibrationDetection_Backend.git
 [submodule "DatasetManagementPlatform/BackendApplication"]
 	path = DatasetManagementPlatform/BackendApplication
-	url = https://github.com/MinmusLin/ICW_OssManagement_Backend
+	url = git@github.com:MinmusLin/ICW_OssManagement_Backend.git
 [submodule "DatasetManagementPlatform/FrontendApplication"]
 	path = DatasetManagementPlatform/FrontendApplication
-	url = https://github.com/MinmusLin/ICW_OssManagement_Frontend
+	url = git@github.com:MinmusLin/ICW_OssManagement_Frontend.git
