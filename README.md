@@ -21,6 +21,8 @@ Intelligent Curtain Wall (backend applications integration)
 | **用户鉴权系统**<br>源代码：[Subsystems/UserAuthentication](https://github.com/MinmusLin/ICW_UserAuthentication_Backend)<br>接口访问链接：http://110.42.214.164:8008<br>日志输出链接：http://110.42.214.164:9000/logs/user-authentication | 2253215 [刘垚](https://github.com/yaoyaolove)<br>2251324 [王骏禹](https://github.com/PiGodzyh)<br>2251323 [朱煜昊](https://github.com/L1KEAB0T) |
 | **幕墙震动数据检测与展示系统**<br>源代码：[Subsystems/VibrationDetection](https://github.com/MinmusLin/ICW_VibrationDetection_Backend)<br>接口访问链接：http://110.42.214.164:8009<br>日志输出链接：http://110.42.214.164:9000/logs/vibration-detection | 2151042 [兰凯](https://github.com/haixiuxiu)<br>2153572 [喻霄奕](https://github.com/Yxy54321)<br>2152932 [吴晓龙](https://github.com/l505l)<br>2154098 [张睿康](https://github.com/chanceray) |
 
+部署日志输出链接：http://110.42.214.164:9000/deployment-logs
+
 ## 数据集管理平台
 
 | 数据集管理平台 | 成员 |
