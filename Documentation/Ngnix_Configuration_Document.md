@@ -69,7 +69,7 @@ sudo nano /etc/nginx/sites-available/proxy
 server {
     listen 8000;
     location / {
-        proxy_pass ;
+        proxy_pass https://hz-4.matpool.com:27450;
         include proxy_params;
     }
 }
@@ -77,7 +77,7 @@ server {
 server {
     listen 8001;
     location / {
-        proxy_pass ;
+        proxy_pass https://hz-4.matpool.com:26526;
         include proxy_params;
     }
 }
@@ -85,7 +85,7 @@ server {
 server {
     listen 8002;
     location / {
-        proxy_pass ;
+        proxy_pass https://hz-4.matpool.com:26208;
         include proxy_params;
     }
 }
@@ -93,7 +93,7 @@ server {
 server {
     listen 8003;
     location / {
-        proxy_pass ;
+        proxy_pass https://hz-4.matpool.com:27142;
         include proxy_params;
     }
 }
@@ -101,7 +101,7 @@ server {
 server {
     listen 8004;
     location / {
-        proxy_pass ;
+        proxy_pass https://hz-t3.matpool.com:27515;
         include proxy_params;
     }
 }
@@ -109,7 +109,7 @@ server {
 server {
     listen 8005;
     location / {
-        proxy_pass ;
+        proxy_pass https://hz-t3.matpool.com:26519;
         include proxy_params;
     }
 }
@@ -117,7 +117,7 @@ server {
 server {
     listen 8006;
     location / {
-        proxy_pass ;
+        proxy_pass https://hz-t3.matpool.com:27183;
         include proxy_params;
     }
 }
@@ -125,7 +125,7 @@ server {
 server {
     listen 8007;
     location / {
-        proxy_pass ;
+        proxy_pass https://hz-t3.matpool.com:28179;
         include proxy_params;
     }
 }
@@ -133,7 +133,7 @@ server {
 server {
     listen 8008;
     location / {
-        proxy_pass ;
+        proxy_pass https://hz-4.matpool.com:29900;
         include proxy_params;
     }
 }
@@ -141,7 +141,7 @@ server {
 server {
     listen 8009;
     location / {
-        proxy_pass ;
+        proxy_pass https://hz-t3.matpool.com:27847;
         include proxy_params;
     }
 }
@@ -203,4 +203,13 @@ sudo nginx -t
 
 ```bash
 sudo systemctl restart nginx
+```
+
+```bash
+docker --version
+```
+
+```bash
+sudo docker pull minmuslin/intelligent-curtain-wall:oss-management
+sudo docker run -d -p 9000:8080 --name oss-management minmuslin/intelligent-curtain-wall:oss-management
 ```
