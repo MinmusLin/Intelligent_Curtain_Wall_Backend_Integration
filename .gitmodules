@@ -1,0 +1,36 @@
+[submodule "Subsystems/CorrosionDetection"]
+	path = Subsystems/CorrosionDetection
+	url = https://github.com/MinmusLin/ICW_CorrosionDetection_Backend
+[submodule "Subsystems/CrackDetection"]
+	path = Subsystems/CrackDetection
+	url = https://github.com/MinmusLin/ICW_CrackDetection_Backend
+[submodule "Subsystems/FlatnessDetection"]
+	path = Subsystems/FlatnessDetection
+	url = https://github.com/MinmusLin/ICW_FlatnessDetection_Backend
+[submodule "Subsystems/MobileData"]
+	path = Subsystems/MobileData
+	url = https://github.com/MinmusLin/ICW_MobileData_Backend
+[submodule "Subsystems/ModelingCommunication"]
+	path = Subsystems/ModelingCommunication
+	url = https://github.com/MinmusLin/ICW_ModelingCommunication_Backend
+[submodule "Subsystems/ResilienceAssessment"]
+	path = Subsystems/ResilienceAssessment
+	url = https://github.com/MinmusLin/ICW_ResilienceAssessment_Backend
+[submodule "Subsystems/SpallingDetection"]
+	path = Subsystems/SpallingDetection
+	url = https://github.com/MinmusLin/ICW_SpallingDetection_Backend
+[submodule "Subsystems/StainDetection"]
+	path = Subsystems/StainDetection
+	url = https://github.com/MinmusLin/ICW_StainDetection_Backend
+[submodule "Subsystems/UserAuthentication"]
+	path = Subsystems/UserAuthentication
+	url = https://github.com/MinmusLin/ICW_UserAuthentication_Backend
+[submodule "Subsystems/VibrationDetection"]
+	path = Subsystems/VibrationDetection
+	url = https://github.com/MinmusLin/ICW_VibrationDetection_Backend
+[submodule "DatasetManagementPlatform/BackendApplication"]
+	path = DatasetManagementPlatform/BackendApplication
+	url = https://github.com/MinmusLin/ICW_OssManagement_Backend
+[submodule "DatasetManagementPlatform/FrontendApplication"]
+	path = DatasetManagementPlatform/FrontendApplication
+	url = https://github.com/MinmusLin/ICW_OssManagement_Frontend
