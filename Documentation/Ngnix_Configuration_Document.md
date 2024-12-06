@@ -205,9 +205,15 @@ sudo nginx -t
 sudo systemctl restart nginx
 ```
 
+查看 Docker 版本：
+
 ```bash
 docker --version
 ```
+
+![](assets/2024-12-06_10-06-43.png)
+
+部署智慧幕墙数据集管理平台后端应用程序镜像：
 
 ```bash
 sudo docker pull minmuslin/intelligent-curtain-wall:oss-management
