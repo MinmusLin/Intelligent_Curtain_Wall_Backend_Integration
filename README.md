@@ -25,8 +25,8 @@ Intelligent Curtain Wall (backend applications integration)
 
 | 数据集管理平台 | 成员 |
 | :--- | :--- |
-| **后端应用程序**<br>源代码：[DatasetManagementPlatform/Backend](https://github.com/MinmusLin/ICW_OssManagement_BackendApplication)<br>接口访问链接：http://110.42.214.164:9000 | 2250758 [林继申](https://github.com/MinmusLin)<br>2251730 [刘淑仪](https://github.com/bunnyoii)<br>2256225 [中谷天音](https://github.com/amaneosaka) |
-| **前端应用程序**<br>源代码：[DatasetManagementPlatform/Frontend](https://github.com/MinmusLin/ICW_OssManagement_FrontendApplication)<br>平台访问链接：http://110.42.214.164 | 2250758 [林继申](https://github.com/MinmusLin)<br>2251730 [刘淑仪](https://github.com/bunnyoii)<br>2256225 [中谷天音](https://github.com/amaneosaka) |
+| **后端应用程序**<br>源代码：[DatasetManagementPlatform/BackendApplication](https://github.com/MinmusLin/ICW_OssManagement_Backend)<br>接口访问链接：http://110.42.214.164:9000 | 2250758 [林继申](https://github.com/MinmusLin)<br>2251730 [刘淑仪](https://github.com/bunnyoii)<br>2256225 [中谷天音](https://github.com/amaneosaka) |
+| **前端应用程序**<br>源代码：[DatasetManagementPlatform/FrontendApplication](https://github.com/MinmusLin/ICW_OssManagement_Frontend)<br>平台访问链接：http://110.42.214.164 | 2250758 [林继申](https://github.com/MinmusLin)<br>2251730 [刘淑仪](https://github.com/bunnyoii)<br>2256225 [中谷天音](https://github.com/amaneosaka) |
 
 ## 相关文档
 
