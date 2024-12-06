@@ -1,27 +1,23 @@
 name: Update Submodules
-
 on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
-
 jobs:
   update-submodules:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
           submodules: 'recursive'
-
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H github.com >> ~/.ssh/known_hosts
-
       - name: Update submodules
         run: |
           git config --global user.name "GitHub Actions"
@@ -29,4 +25,4 @@ jobs:
           git submodule update --remote
           git add .
           git commit -m "Update submodules" || echo "No changes to commit"
-          GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no" git push
+          git push
