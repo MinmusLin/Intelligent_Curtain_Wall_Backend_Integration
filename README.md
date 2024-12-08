@@ -41,21 +41,24 @@ Docker 和 Docker Compose 技术栈文档
 * [Dockerfile Guide](Documentation/Dockerfile_Guide.md)
 Dockerfile 编写指南
 
-* [GPU Configuration Document](Documentation/GPU_Configuration_Document.md)
+* [GPU Configuration Documentation](Documentation/GPU_Configuration_Documentation.md)
 矩池云 GPU 环境配置文档
 
 * [Git Basic Usage Documentation](Documentation/Git_Basic_Usage_Documentation.md)
 Git 基本使用文档
 
-* [Ngnix Configuration Document](Documentation/Ngnix_Configuration_Document.md)
+* [Ngnix Configuration Documentation](Documentation/Ngnix_Configuration_Documentation.md)
 腾讯云 Ngnix 配置文档
 
-* [OSS Configuration Document](Documentation/OSS_Configuration_Document.md)
+* [OSS Configuration Documentation](Documentation/OSS_Configuration_Documentation.md)
 阿里云对象存储 OSS 配置文档
+
+* [OSS Controller API Documentation](Documentation/OSS_Controller_API_Documentation.md)
+OSS 控制器 API 文档
 
 * [Requirements Analysis and Modeling Presentation](Documentation/Requirements_Analysis_and_Modeling_Presentation.pdf)
 智慧幕墙系统架构与服务器运维：需求分析与建模汇报
 
 ## 文档更新日期
 
-2024年12月6日
+2024年12月9日
