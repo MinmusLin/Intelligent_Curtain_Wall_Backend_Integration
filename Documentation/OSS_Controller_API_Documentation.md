@@ -18,7 +18,7 @@ OSS 控制器 API 提供文件的上传与下载功能，通过 HTTP 请求与�
 
 **注意**：
 
-文件路径通过 URL 动态指定。例如，下载路径为 `/oss/download/user/documents/file.txt`，则 `user/documents/file.txt` 为目标文件。
+文件的最终存储路径（包括文件名）需要在上传请求的 URL 中明确指定。举例来说，如果您上传的原始文件名是 `upload.txt`，并在请求URL中指定存储路径为 `/oss/upload/user/documents/file.txt`，那么该文件会以指定的文件名 `file.txt` 存储于 `user/documents/` 目录下，即最终存储路径为 `user/documents/file.txt`。请注意，这里的 `file.txt` 是需要由您在上传请求中明确指定的新文件名（可以与原文件名重合）。
 
 ### 响应
 
