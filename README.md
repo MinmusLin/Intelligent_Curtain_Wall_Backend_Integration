@@ -56,6 +56,9 @@ Git 基本使用文档
 * [OSS Controller API Documentation](Documentation/OSS_Controller_API_Documentation.md)
 OSS 控制器 API 文档
 
+* [System Architecture and Implementation of Dataset Management Platform](Documentation/System_Architecture_and_Implementation_of_Dataset_Management_Platform.pptx)
+智慧幕墙数据集管理平台系统架构与实现汇报
+
 * [System Architecture and Server Operations and Maintenance Presentation](Documentation/System_Architecture_and_Server_Operations_and_Maintenance_Presentation.pdf)
 智慧幕墙系统架构与服务器运维汇报
 
