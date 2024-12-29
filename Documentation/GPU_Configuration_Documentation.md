@@ -233,6 +233,8 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
 
+  # sudo docker run -d --name corrosion-detection -p 8000:8080 --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all minmuslin/intelligent-curtain-wall:corrosion-detection
+
   # 石材幕墙裂缝检测系统
   crack-detection:
     image: minmuslin/intelligent-curtain-wall:crack-detection
@@ -242,6 +244,10 @@ services:
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - /home/mat/Intelligent_Curtain_Wall/crack-detection:/segformerProject/model
+
+  # sudo docker run -d --name crack-detection -p 8001:8080 --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all -v /home/mat/Intelligent_Curtain_Wall/crack-detection:/segformerProject/model minmuslin/intelligent-curtain-wall:crack-detection
 
   # 玻璃幕墙平整度检测系统
   flatness-detection:
@@ -252,6 +258,10 @@ services:
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - /home/mat/Intelligent_Curtain_Wall/flatness-detection:/app/model
+
+  # sudo docker run -d --name flatness-detection -p 8002:8080 --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all -v /home/mat/Intelligent_Curtain_Wall/flatness-detection:/app/model minmuslin/intelligent-curtain-wall:flatness-detection
 
   # 移动端幕墙数据采集与展示系统
   mobile-data:
@@ -263,6 +273,18 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
 
+  # sudo docker run -d --name mobile-data -p 8003:8080 --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all minmuslin/intelligent-curtain-wall:mobile-data
+
+  # 移动端幕墙数据采集与展示系统（数据记录程序）
+  mobile-data-data-logger:
+    image: minmuslin/intelligent-curtain-wall:mobile-data-data-logger
+    container_name: mobile-data-data-logger
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+
+  # sudo docker run -d --name mobile-data-data-logger --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all minmuslin/intelligent-curtain-wall:mobile-data-data-logger
+
   # 无人机采集数据的 3D 建模与通讯系统
   modeling-communication:
     image: minmuslin/intelligent-curtain-wall:modeling-communication
@@ -272,6 +294,8 @@ services:
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
+
+  # sudo docker run -d --name modeling-communication -p 8004:8080 --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all minmuslin/intelligent-curtain-wall:modeling-communication
 
   # 幕墙韧性评估软件系统
   resilience-assessment:
@@ -283,6 +307,8 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
 
+  # sudo docker run -d --name resilience-assessment -p 8005:8080 --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all minmuslin/intelligent-curtain-wall:resilience-assessment
+
   # 玻璃幕墙爆裂和平整度检测系统
   spalling-detection:
     image: minmuslin/intelligent-curtain-wall:spalling-detection
@@ -292,6 +318,8 @@ services:
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
+
+  # sudo docker run -d --name spalling-detection -p 8006:8080 --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all minmuslin/intelligent-curtain-wall:spalling-detection
 
   # 石材幕墙污渍检测系统
   stain-detection:
@@ -303,6 +331,8 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
 
+  # sudo docker run -d --name stain-detection -p 8007:8080 --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all minmuslin/intelligent-curtain-wall:stain-detection
+
   # 用户鉴权系统
   user-authentication:
     image: minmuslin/intelligent-curtain-wall:user-authentication
@@ -313,6 +343,8 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
 
+  # sudo docker run -d --name user-authentication -p 8008:8080 --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all minmuslin/intelligent-curtain-wall:user-authentication
+
   # 幕墙震动数据检测与展示系统
   vibration-detection:
     image: minmuslin/intelligent-curtain-wall:vibration-detection
@@ -322,6 +354,8 @@ services:
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
+
+  # sudo docker run -d --name vibration-detection -p 8009:8080 --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all minmuslin/intelligent-curtain-wall:vibration-detection
 ```
 
 编辑 `automated-deployment.sh` 文件：
@@ -373,7 +407,7 @@ sudo crontab -e
 在最后一行添加如下配置：
 
 ```
-*/30 * * * * /home/mat/Intelligent_Curtain_Wall/automated-deployment.sh
+0 0 * * * /home/mat/Intelligent_Curtain_Wall/automated-deployment.sh
 ```
 
 查看 Cron 定时服务状态：
@@ -396,26 +430,4 @@ sudo visudo
 
 ```
 mat ALL=(ALL) NOPASSWD: ALL
-```
-
-## 配置子系统文件夹
-
-配置子系统文件夹：
-
-```bash
-mkdir /home/mat/Intelligent_Curtain_Wall/corrosion-detection
-mkdir /home/mat/Intelligent_Curtain_Wall/crack-detection
-mkdir /home/mat/Intelligent_Curtain_Wall/flatness-detection
-mkdir /home/mat/Intelligent_Curtain_Wall/mobile-data
-mkdir /home/mat/Intelligent_Curtain_Wall/modeling-communication
-mkdir /home/mat/Intelligent_Curtain_Wall/resilience-assessment
-mkdir /home/mat/Intelligent_Curtain_Wall/spalling-detection
-mkdir /home/mat/Intelligent_Curtain_Wall/stain-detection
-mkdir /home/mat/Intelligent_Curtain_Wall/vibration-detection
-```
-
-配置子系统文件夹读写权限：
-
-```bash
-sudo chmod -R u+rw /home/mat/Intelligent_Curtain_Wall/
 ```
