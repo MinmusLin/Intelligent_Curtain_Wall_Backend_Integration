@@ -47,6 +47,9 @@ Dockerfile 编写指南
 * [Git Basic Usage Documentation](Documentation/Git_Basic_Usage_Documentation.md)
 Git 基本使用文档
 
+* [Meeting Minutes](Documentation/Meeting_Minutes.md)
+会议纪要
+
 * [Ngnix Configuration Documentation](Documentation/Ngnix_Configuration_Documentation.md)
 腾讯云 Ngnix 配置文档
 
@@ -64,4 +67,4 @@ OSS 控制器 API 文档
 
 ## 文档更新日期
 
-2024年12月11日
+2025年1月8日
